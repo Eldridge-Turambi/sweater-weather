@@ -1,20 +1,24 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/requests/api/v1/forecast_request_spec.rb": {
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/requests/api/v1/background_request_spec.rb": {
         "lines": [
           1,
           null,
           1,
+          null,
           1,
           1,
           1,
           null,
           1,
+          1,
+          1,
+          1,
           null,
           1,
           1,
-          null,
+          1,
           1,
           1,
           1,
@@ -102,8 +106,8 @@
           1,
           1,
           1,
-          10,
-          10,
+          12,
+          12,
           1,
           1,
           null
@@ -318,6 +322,77 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/requests/api/v1/forecast_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/services/background_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/services/background_service.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
           null,
           null,
           null,
@@ -414,6 +489,52 @@
           null
         ]
       },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/controllers/api/v1/backgrounds_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/serializers/background_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/controllers/api/v1/forecast_controller.rb": {
         "lines": [
           1,
@@ -426,12 +547,6 @@
           0,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -486,6 +601,6 @@
         ]
       }
     },
-    "timestamp": 1650861856
+    "timestamp": 1650867878
   }
 }
