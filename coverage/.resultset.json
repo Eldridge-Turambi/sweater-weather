@@ -105,8 +105,8 @@
           1,
           1,
           1,
-          17,
-          17,
+          13,
+          13,
           1,
           1,
           null
@@ -442,6 +442,48 @@
           null
         ]
       },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/services/munchies_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/services/munchies_service.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/services/weather_service_spec.rb": {
         "lines": [
           1,
@@ -600,6 +642,6 @@
         ]
       }
     },
-    "timestamp": 1650898949
+    "timestamp": 1650901757
   }
 }
