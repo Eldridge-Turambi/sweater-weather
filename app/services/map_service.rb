@@ -15,7 +15,7 @@ class MapService
       response = connection.get('address') do |faraday|
         faraday.params['location'] = city
       end
-      parse_json(response)
+      parse_json(response)[:results][0][:locations][0][:latLng]
     end
   end
 end
