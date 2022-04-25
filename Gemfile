@@ -24,6 +24,8 @@ gem 'puma', '~> 3.11'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'faraday'
+gem 'jsonapi-serializer'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
@@ -36,6 +38,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'simplecov'
+  gem 'figaro'
 end
 
 group :development do
@@ -43,6 +46,11 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
 end
 
 
