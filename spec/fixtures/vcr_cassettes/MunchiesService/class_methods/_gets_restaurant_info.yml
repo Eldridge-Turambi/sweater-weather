@@ -24,36 +24,36 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
+      X-B3-Sampled:
+      - '0'
       Server:
       - envoy
       X-Routing-Service:
-      - routing-main--uswest2-6f9cc7c6d9-qp5j9; site=public_api_v3
+      - routing-main--uswest2-769597b4ff-lkx4l; site=public_api_v3
       Ratelimit-Dailylimit:
       - '5000'
-      Ratelimit-Remaining:
-      - '4995'
       X-Zipkin-Id:
-      - '0843bd102ee92f0c'
-      X-B3-Sampled:
-      - '0'
+      - b6e367b4c5bd08c2
+      Ratelimit-Remaining:
+      - '4993'
       Ratelimit-Resettime:
       - '2022-04-26T00:00:00+00:00'
       X-Cloudmap:
       - routing_uswest2
       X-Proxied:
-      - 10-69-173-40-uswest2bprod
+      - 10-69-126-17-uswest2aprod
       X-Extlb:
-      - 10-69-173-40-uswest2bprod
+      - 10-69-126-17-uswest2aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 25 Apr 2022 15:49:17 GMT
+      - Mon, 25 Apr 2022 16:53:15 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8222-DEN
+      - cache-den8278-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -70,7 +70,7 @@ http_interactions:
         "review_count": 6674, "categories": [{"alias": "shanghainese", "title": "Shanghainese"},
         {"alias": "seafood", "title": "Seafood"}, {"alias": "noodles", "title": "Noodles"}],
         "rating": 4.0, "coordinates": {"latitude": 40.7156608, "longitude": -73.9967012},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "46 Bowery St", "address2": "", "address3": "", "city": "New York", "zip_code":
         "10013", "country": "US", "state": "NY", "display_address": ["46 Bowery St",
         "New York, NY 10013"]}, "phone": "+12122338888", "display_phone": "(212) 233-8888",
@@ -80,7 +80,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/shu-jiao-fu-zhou-cuisine-restaurant-new-york?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 1007, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 4.5, "coordinates": {"latitude": 40.7174109, "longitude": -73.9920876},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "295 Grand St", "address2": null, "address3": null, "city": "New York", "zip_code":
         "10002", "country": "US", "state": "NY", "display_address": ["295 Grand St",
         "New York, NY 10002"]}, "phone": "+12126252532", "display_phone": "(212) 625-2532",
@@ -90,7 +90,7 @@ http_interactions:
         "review_count": 235, "categories": [{"alias": "szechuan", "title": "Szechuan"},
         {"alias": "dimsum", "title": "Dim Sum"}, {"alias": "cocktailbars", "title":
         "Cocktail Bars"}], "rating": 5.0, "coordinates": {"latitude": 40.75002, "longitude":
-        -73.98215}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -73.98215}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "13 E 37th St", "address2": null, "address3": "", "city": "New
         York", "zip_code": "10016", "country": "US", "state": "NY", "display_address":
         ["13 E 37th St", "New York, NY 10016"]}, "phone": "+16468820666", "display_phone":
@@ -100,7 +100,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/blue-willow-%E5%A4%9C%E6%9D%A5%E6%B9%98-new-york-2?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 475, "categories": [{"alias": "szechuan", "title": "Szechuan"}],
         "rating": 4.5, "coordinates": {"latitude": 40.76292, "longitude": -73.976546},
-        "transactions": ["delivery", "pickup"], "location": {"address1": "40 W 56th
+        "transactions": ["pickup", "delivery"], "location": {"address1": "40 W 56th
         St", "address2": null, "address3": "", "city": "New York", "zip_code": "10019",
         "country": "US", "state": "NY", "display_address": ["40 W 56th St", "New York,
         NY 10019"]}, "phone": "+12122132299", "display_phone": "(212) 213-2299", "distance":
@@ -110,7 +110,7 @@ http_interactions:
         "review_count": 348, "categories": [{"alias": "szechuan", "title": "Szechuan"},
         {"alias": "dimsum", "title": "Dim Sum"}, {"alias": "seafood", "title": "Seafood"}],
         "rating": 4.0, "coordinates": {"latitude": 40.80053, "longitude": -73.967586},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "239 W 105th St", "address2": "", "address3": "", "city": "New York", "zip_code":
         "10025", "country": "US", "state": "NY", "display_address": ["239 W 105th
         St", "New York, NY 10025"]}, "phone": "+12128658808", "display_phone": "(212)
@@ -120,7 +120,7 @@ http_interactions:
         "review_count": 1303, "categories": [{"alias": "szechuan", "title": "Szechuan"},
         {"alias": "noodles", "title": "Noodles"}, {"alias": "beerbar", "title": "Beer
         Bar"}], "rating": 4.0, "coordinates": {"latitude": 40.732072, "longitude":
-        -73.988074}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -73.988074}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "90 3rd Ave", "address2": "", "address3": "", "city": "New York",
         "zip_code": "10003", "country": "US", "state": "NY", "display_address": ["90
         3rd Ave", "New York, NY 10003"]}, "phone": "+12123908685", "display_phone":
@@ -130,42 +130,63 @@ http_interactions:
         false, "url": "https://www.yelp.com/biz/caf%C3%A9-china-new-york-2?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 1744, "categories": [{"alias": "szechuan", "title": "Szechuan"}],
         "rating": 4.0, "coordinates": {"latitude": 40.75157, "longitude": -73.98584},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "59 W 37th St", "address2": null, "address3": "", "city": "New York", "zip_code":
         "10018", "country": "US", "state": "NY", "display_address": ["59 W 37th St",
         "New York, NY 10018"]}, "phone": "+12122132810", "display_phone": "(212) 213-2810",
-        "distance": 5200.173300492162}, {"id": "0dDCDQz7DrKkSvu9h2hcQw", "alias":
-        "chow-house-new-york", "name": "Chow House", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kzeClsI9_2tkHqKScotx1Q/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/chow-house-new-york?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
-        "review_count": 502, "categories": [{"alias": "szechuan", "title": "Szechuan"},
-        {"alias": "noodles", "title": "Noodles"}, {"alias": "soup", "title": "Soup"}],
-        "rating": 4.5, "coordinates": {"latitude": 40.72915, "longitude": -74.00072},
-        "transactions": ["delivery", "restaurant_reservation", "pickup"], "price":
-        "$$", "location": {"address1": "181 Bleecker St", "address2": null, "address3":
-        "", "city": "New York", "zip_code": "10012", "country": "US", "state": "NY",
-        "display_address": ["181 Bleecker St", "New York, NY 10012"]}, "phone": "+12128371021",
-        "display_phone": "(212) 837-1021", "distance": 2692.4401801037266}, {"id":
-        "4DInnPhOyvXFbYpUdO0SMQ", "alias": "antidote-brooklyn-2", "name": "Antidote",
-        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/m2xT_i6d71QIC30G6h73eQ/o.jpg",
+        "distance": 5200.173300492162}, {"id": "4DInnPhOyvXFbYpUdO0SMQ", "alias":
+        "antidote-brooklyn-2", "name": "Antidote", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/m2xT_i6d71QIC30G6h73eQ/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/antidote-brooklyn-2?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 42, "categories": [{"alias": "cocktailbars", "title": "Cocktail
         Bars"}, {"alias": "dimsum", "title": "Dim Sum"}, {"alias": "szechuan", "title":
         "Szechuan"}], "rating": 5.0, "coordinates": {"latitude": 40.714253413118925,
-        "longitude": -73.96544806659222}, "transactions": ["delivery", "pickup"],
+        "longitude": -73.96544806659222}, "transactions": ["pickup", "delivery"],
         "location": {"address1": "66 S 2nd St", "address2": "", "address3": null,
         "city": "Brooklyn", "zip_code": "11249", "country": "US", "state": "NY", "display_address":
         ["66 S 2nd St", "Brooklyn, NY 11249"]}, "phone": "+17187822585", "display_phone":
-        "(718) 782-2585", "distance": 2621.1806649593627}, {"id": "R26zweQ8-xoZS7iHkXQOvw",
-        "alias": "shanghai-21-new-york-2", "name": "Shanghai 21", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/MGhYHLbutM_8mkf4aYB8XA/o.jpg",
+        "(718) 782-2585", "distance": 2621.1806649593627}, {"id": "0dDCDQz7DrKkSvu9h2hcQw",
+        "alias": "chow-house-new-york", "name": "Chow House", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kzeClsI9_2tkHqKScotx1Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/chow-house-new-york?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
+        "review_count": 502, "categories": [{"alias": "szechuan", "title": "Szechuan"},
+        {"alias": "noodles", "title": "Noodles"}, {"alias": "soup", "title": "Soup"}],
+        "rating": 4.5, "coordinates": {"latitude": 40.72915, "longitude": -74.00072},
+        "transactions": ["pickup", "delivery", "restaurant_reservation"], "price":
+        "$$", "location": {"address1": "181 Bleecker St", "address2": null, "address3":
+        "", "city": "New York", "zip_code": "10012", "country": "US", "state": "NY",
+        "display_address": ["181 Bleecker St", "New York, NY 10012"]}, "phone": "+12128371021",
+        "display_phone": "(212) 837-1021", "distance": 2692.4401801037266}, {"id":
+        "scTDvJ2M2jDbb1ntVeIyxA", "alias": "hao-noodle-west-village-new-york-3", "name":
+        "Hao Noodle - West Village", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/X-hE8s5vsTYtJ-w2k7p86w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hao-noodle-west-village-new-york-3?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
+        "review_count": 796, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "noodles", "title": "Noodles"}], "rating": 4.0, "coordinates": {"latitude":
+        40.7334863190479, "longitude": -73.9998929006093}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "401 6th Ave", "address2":
+        "", "address3": "", "city": "New York", "zip_code": "10014", "country": "US",
+        "state": "NY", "display_address": ["401 6th Ave", "New York, NY 10014"]},
+        "phone": "+12126338900", "display_phone": "(212) 633-8900", "distance": 3153.574300459982},
+        {"id": "R26zweQ8-xoZS7iHkXQOvw", "alias": "shanghai-21-new-york-2", "name":
+        "Shanghai 21", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/MGhYHLbutM_8mkf4aYB8XA/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/shanghai-21-new-york-2?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 1829, "categories": [{"alias": "shanghainese", "title": "Shanghainese"}],
         "rating": 4.0, "coordinates": {"latitude": 40.71441, "longitude": -73.99902},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "21 Mott St", "address2": "", "address3": "", "city": "New York", "zip_code":
         "10013", "country": "US", "state": "NY", "display_address": ["21 Mott St",
         "New York, NY 10013"]}, "phone": "+12127666311", "display_phone": "(212) 766-6311",
-        "distance": 1073.6754859131381}, {"id": "X8ZS-dgiMIJvhwf9SaDnjw", "alias":
-        "wah-fung-no-1-new-york-2", "name": "Wah Fung No 1", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ODYC7c1NSI1EKceznEiWjA/o.jpg",
+        "distance": 1073.6754859131381}, {"id": "iSjPBJRiWqrgxW7ZM3CGig", "alias":
+        "birds-of-a-feather-brooklyn", "name": "Birds of a Feather", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/LCpWi2oB64WZJNaTjgmKyA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/birds-of-a-feather-brooklyn?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
+        "review_count": 473, "categories": [{"alias": "szechuan", "title": "Szechuan"}],
+        "rating": 4.0, "coordinates": {"latitude": 40.71442, "longitude": -73.960441},
+        "transactions": ["pickup", "delivery", "restaurant_reservation"], "price":
+        "$$", "location": {"address1": "191 Grand St", "address2": "", "address3":
+        null, "city": "Brooklyn", "zip_code": "11211", "country": "US", "state": "NY",
+        "display_address": ["191 Grand St", "Brooklyn, NY 11211"]}, "phone": "+17189696800",
+        "display_phone": "(718) 969-6800", "distance": 3012.406485249949}, {"id":
+        "X8ZS-dgiMIJvhwf9SaDnjw", "alias": "wah-fung-no-1-new-york-2", "name": "Wah
+        Fung No 1", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ODYC7c1NSI1EKceznEiWjA/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/wah-fung-no-1-new-york-2?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 1737, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
         {"alias": "cantonese", "title": "Cantonese"}], "rating": 4.5, "coordinates":
@@ -174,33 +195,13 @@ http_interactions:
         "", "city": "New York", "zip_code": "10002", "country": "US", "state": "NY",
         "display_address": ["79 Chrystie St", "New York, NY 10002"]}, "phone": "+12129255175",
         "display_phone": "(212) 925-5175", "distance": 1323.2851807067286}, {"id":
-        "scTDvJ2M2jDbb1ntVeIyxA", "alias": "hao-noodle-west-village-new-york-3", "name":
-        "Hao Noodle - West Village", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/X-hE8s5vsTYtJ-w2k7p86w/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/hao-noodle-west-village-new-york-3?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
-        "review_count": 796, "categories": [{"alias": "chinese", "title": "Chinese"},
-        {"alias": "noodles", "title": "Noodles"}], "rating": 4.0, "coordinates": {"latitude":
-        40.7334863190479, "longitude": -73.9998929006093}, "transactions": ["delivery",
-        "pickup"], "price": "$$", "location": {"address1": "401 6th Ave", "address2":
-        "", "address3": "", "city": "New York", "zip_code": "10014", "country": "US",
-        "state": "NY", "display_address": ["401 6th Ave", "New York, NY 10014"]},
-        "phone": "+12126338900", "display_phone": "(212) 633-8900", "distance": 3153.574300459982},
-        {"id": "iSjPBJRiWqrgxW7ZM3CGig", "alias": "birds-of-a-feather-brooklyn", "name":
-        "Birds of a Feather", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/LCpWi2oB64WZJNaTjgmKyA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/birds-of-a-feather-brooklyn?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
-        "review_count": 473, "categories": [{"alias": "szechuan", "title": "Szechuan"}],
-        "rating": 4.0, "coordinates": {"latitude": 40.71442, "longitude": -73.960441},
-        "transactions": ["delivery", "restaurant_reservation", "pickup"], "price":
-        "$$", "location": {"address1": "191 Grand St", "address2": "", "address3":
-        null, "city": "Brooklyn", "zip_code": "11211", "country": "US", "state": "NY",
-        "display_address": ["191 Grand St", "Brooklyn, NY 11211"]}, "phone": "+17189696800",
-        "display_phone": "(718) 969-6800", "distance": 3012.406485249949}, {"id":
         "4FD0TAxe70nb3ngk3sXF9Q", "alias": "uluh-new-york", "name": "Uluh", "image_url":
         "https://s3-media3.fl.yelpcdn.com/bphoto/JQfNL8nJukKJjSQ4lRYs-g/o.jpg", "is_closed":
         false, "url": "https://www.yelp.com/biz/uluh-new-york?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 663, "categories": [{"alias": "tea", "title": "Tea Rooms"},
         {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "szechuan", "title":
         "Szechuan"}], "rating": 4.5, "coordinates": {"latitude": 40.7293403, "longitude":
-        -73.9866071}, "transactions": ["delivery", "pickup"], "price": "$$$", "location":
+        -73.9866071}, "transactions": ["pickup", "delivery"], "price": "$$$", "location":
         {"address1": "152 2nd Ave", "address2": "Ste A", "address3": "", "city": "New
         York", "zip_code": "10003", "country": "US", "state": "NY", "display_address":
         ["152 2nd Ave", "Ste A", "New York, NY 10003"]}, "phone": "+19172615963",
@@ -210,7 +211,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/szechuan-mountain-house-new-york-2?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 484, "categories": [{"alias": "szechuan", "title": "Szechuan"}],
         "rating": 4.5, "coordinates": {"latitude": 40.72911, "longitude": -73.98858},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "23 St Marks Pl", "address2": "", "address3": null, "city": "New York", "zip_code":
         "10003", "country": "US", "state": "NY", "display_address": ["23 St Marks
         Pl", "New York, NY 10003"]}, "phone": "+19173883866", "display_phone": "(917)
@@ -229,17 +230,27 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/mr-sun-new-york?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 105, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
         {"alias": "seafood", "title": "Seafood"}], "rating": 4.5, "coordinates": {"latitude":
-        40.75809, "longitude": -73.98026}, "transactions": ["delivery", "restaurant_reservation",
-        "pickup"], "price": "$$", "location": {"address1": "48 W 48th St", "address2":
-        "", "address3": null, "city": "New York", "zip_code": "10036", "country":
-        "US", "state": "NY", "display_address": ["48 W 48th St", "New York, NY 10036"]},
-        "phone": "+17183169811", "display_phone": "(718) 316-9811", "distance": 5959.214395061453},
-        {"id": "olRNNJCJ2TJvPRmjBiOcGA", "alias": "silky-kitchen-new-york-3", "name":
-        "Silky Kitchen", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YFkv6-Z4Ax0mtwMkIjUDPA/o.jpg",
+        40.75809, "longitude": -73.98026}, "transactions": ["pickup", "delivery",
+        "restaurant_reservation"], "price": "$$", "location": {"address1": "48 W 48th
+        St", "address2": "", "address3": null, "city": "New York", "zip_code": "10036",
+        "country": "US", "state": "NY", "display_address": ["48 W 48th St", "New York,
+        NY 10036"]}, "phone": "+17183169811", "display_phone": "(718) 316-9811", "distance":
+        5959.214395061453}, {"id": "6YehBdKHcLDsvaewhcEjFQ", "alias": "hey-yuet-new-york",
+        "name": "Hey Yuet", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/byR4wTPgJGp32VZ67Hsf8Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/hey-yuet-new-york?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
+        "review_count": 84, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
+        {"alias": "cantonese", "title": "Cantonese"}], "rating": 4.5, "coordinates":
+        {"latitude": 40.74703, "longitude": -73.99645}, "transactions": ["pickup",
+        "delivery", "restaurant_reservation"], "location": {"address1": "251 W 26th
+        St", "address2": null, "address3": "", "city": "New York", "zip_code": "10001",
+        "country": "US", "state": "NY", "display_address": ["251 W 26th St", "New
+        York, NY 10001"]}, "phone": "+16469984196", "display_phone": "(646) 998-4196",
+        "distance": 4639.234952400964}, {"id": "olRNNJCJ2TJvPRmjBiOcGA", "alias":
+        "silky-kitchen-new-york-3", "name": "Silky Kitchen", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YFkv6-Z4Ax0mtwMkIjUDPA/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/silky-kitchen-new-york-3?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 259, "categories": [{"alias": "chinese", "title": "Chinese"},
         {"alias": "noodles", "title": "Noodles"}], "rating": 4.5, "coordinates": {"latitude":
-        40.73297, "longitude": -73.98829}, "transactions": ["delivery", "pickup"],
+        40.73297, "longitude": -73.98829}, "transactions": ["pickup", "delivery"],
         "price": "$$", "location": {"address1": "137 E 13th St", "address2": "", "address3":
         null, "city": "New York", "zip_code": "10003", "country": "US", "state": "NY",
         "display_address": ["137 E 13th St", "New York, NY 10003"]}, "phone": "+16468500635",
@@ -249,21 +260,11 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/din-soup-dumplings-brooklyn?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
         "review_count": 28, "categories": [{"alias": "dimsum", "title": "Dim Sum"}],
         "rating": 4.5, "coordinates": {"latitude": 40.69425, "longitude": -73.99277},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "162 Montague St", "address2": "", "address3": null, "city": "Brooklyn", "zip_code":
         "11201", "country": "US", "state": "NY", "display_address": ["162 Montague
         St", "Brooklyn, NY 11201"]}, "phone": "+17185503888", "display_phone": "(718)
-        550-3888", "distance": 1257.7006234406615}, {"id": "xLJnT-pB4VECJzmUf1Whpg",
-        "alias": "3-times-new-york-5", "name": "3 Times", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uBC9JN_S03qqWTCF_eNnwA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/3-times-new-york-5?adjust_creative=qu8CAL1egblZ38yPBkfD_A&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=qu8CAL1egblZ38yPBkfD_A",
-        "review_count": 184, "categories": [{"alias": "dimsum", "title": "Dim Sum"},
-        {"alias": "shanghainese", "title": "Shanghainese"}, {"alias": "noodles", "title":
-        "Noodles"}], "rating": 4.0, "coordinates": {"latitude": 40.718271, "longitude":
-        -73.985209}, "transactions": ["delivery", "restaurant_reservation", "pickup"],
-        "price": "$$", "location": {"address1": "90 Clinton St", "address2": "", "address3":
-        null, "city": "New York", "zip_code": "10002", "country": "US", "state": "NY",
-        "display_address": ["90 Clinton St", "New York, NY 10002"]}, "phone": "+16466096324",
-        "display_phone": "(646) 609-6324", "distance": 1616.388397109797}], "total":
-        4800, "region": {"center": {"longitude": -73.99429321289062, "latitude": 40.70544486444615}}}'
-  recorded_at: Mon, 25 Apr 2022 15:49:17 GMT
+        550-3888", "distance": 1257.7006234406615}], "total": 4800, "region": {"center":
+        {"longitude": -73.99429321289062, "latitude": 40.70544486444615}}}'
+  recorded_at: Mon, 25 Apr 2022 16:53:15 GMT
 recorded_with: VCR 6.1.0
