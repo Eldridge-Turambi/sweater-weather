@@ -10,6 +10,14 @@ RSpec.describe MapService do
       expect(coordinates[:lng]).to eq(-122.420168)
     end
 
+    it '.directions_and_time', :vcr do
+      directions_info = MapService.directions_and_time('denver,co', 'san francisco,ca')
 
+      expect(directions_info).to be_a(Hash)
+      expect(directions_info).to have_key(:route)
+
+      ## below integer is in seconds
+      expect(directions_info[:route][:legs][0][:time]).to be_an(Integer)
+    end
   end
 end
