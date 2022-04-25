@@ -8,7 +8,7 @@ class MunchiesSerializer
           'type': 'munchie',
           'attributes': {
             'destination_city': city,
-            'travel_time': format_seconds_to_hours(directions[:route][:legs][0][:time]),
+            'travel_time': "#{(directions[:route][:legs][0][:time]/60)/60} hours and #{(directions[:route][:legs][0][:time]/60)%60}min ",
             'forecast': {
               'summary': forecast[:current][:weather][0][:description],
               'temperature': forecast[:current][:temp]
@@ -21,12 +21,6 @@ class MunchiesSerializer
         }
       }
     end
-
-    def format_seconds_to_hours(seconds)
-      minutes = seconds / 60
-      "#{minutes/60} hours and #{minutes%60} min"
-    end
-
 
   end
 end

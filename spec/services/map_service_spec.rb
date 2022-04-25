@@ -12,7 +12,6 @@ RSpec.describe MapService do
 
     it '.directions_and_time', :vcr do
       directions_info = MapService.directions_and_time('denver,co', 'san francisco,ca')
-
       expect(directions_info).to be_a(Hash)
       expect(directions_info).to have_key(:route)
 

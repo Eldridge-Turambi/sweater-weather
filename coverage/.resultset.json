@@ -1,29 +1,17 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/requests/api/v1/background_request_spec.rb": {
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/facades/trip_facade_spec.rb": {
         "lines": [
           1,
           null,
           1,
-          null,
-          1,
-          1,
           1,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          null,
           null,
           null
         ]
@@ -329,6 +317,33 @@
           null
         ]
       },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/requests/api/v1/background_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/requests/api/v1/forecast_request_spec.rb": {
         "lines": [
           1,
@@ -452,7 +467,6 @@
           null,
           1,
           1,
-          null,
           1,
           1,
           null,
@@ -713,6 +727,7 @@
           1,
           1,
           null,
+          null,
           1,
           null,
           null
@@ -730,23 +745,23 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -755,6 +770,6 @@
         ]
       }
     },
-    "timestamp": 1650909160
+    "timestamp": 1650922035
   }
 }
