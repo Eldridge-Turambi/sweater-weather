@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/services/map_service_spec.rb": {
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/requests/api/v1/forecast_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,13 +9,18 @@
           1,
           1,
           1,
+          null,
           1,
-          1,
-          1,
-          1,
+          null,
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -85,6 +90,22 @@
           1,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          10,
+          10,
+          1,
+          1,
           null
         ]
       },
@@ -282,7 +303,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -294,6 +315,30 @@
       "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/config/routes.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/services/map_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -304,26 +349,144 @@
           1,
           null,
           1,
-          1,
-          1,
+          3,
+          3,
           null,
           null,
           null,
           1,
-          1,
+          3,
           null,
           null,
           1,
+          3,
+          3,
+          null,
+          3,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/spec/services/weather_service_spec.rb": {
+        "lines": [
+          1,
+          null,
           1,
           1,
           null,
           1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/services/weather_service.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/richieturing/Turing/mod3/projects_2/sweater-weather/app/serializers/forecast_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          5,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          8,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1650837621
+    "timestamp": 1650859858
   }
 }
