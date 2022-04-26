@@ -10,6 +10,6 @@ RSpec.describe MapService do
       expect(coordinates[:lng]).to eq(-122.420168)
     end
 
-
+    
   end
 end
