@@ -10,11 +10,18 @@ RSpec.describe 'Create User' do
       "password": "password",
       "password_confirmation": "password"
     }
-    # binding.pry
     post '/api/v1/users', headers: headers, params: params
 
-    user_json = JSON.parse(response.body, symbolize_names: true)
     expect(response).to be_successful
     expect(response.status).to eq(200)
+
+    user_json = JSON.parse(response.body, symbolize_names: true)
+
+    expect(user_json).to have_key(:data)
+    expect(user_json[:data]).to have_key(:type)
+    expect(user_json[:data]).to have_key(:id)
+    expect(user_json[:data]).to have_key(:attributes)
+    expect(user_json[:data][:attributes]).to have_key(:email)
+    expect(user_json[:data][:attributes]).to have_key(:api_key)
   end
 end
