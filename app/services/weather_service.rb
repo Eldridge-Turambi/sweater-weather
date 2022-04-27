@@ -17,7 +17,6 @@ class WeatherService
         faraday.params['lat'] = coordinates[:lat]
         faraday.params['lon'] = coordinates[:lng]
         faraday.params['units'] = 'imperial'
-        faraday.params['exclude'] = 'minutely'
       end
       parse_json(response)
     end
