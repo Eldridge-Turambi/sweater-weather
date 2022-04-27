@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'road trip request' do
 
-  xit 'responds json for road trip when given API key', :vcr do
+  it 'responds json for road trip when given API key', :vcr do
     user = User.create(email: 'randomperson@gmail.com', password: 'qwerty', password_confirmation: 'qwerty')
 
     params = {
@@ -10,7 +10,6 @@ RSpec.describe 'road trip request' do
       'destination': 'Parker,CO',
       'api_key': user.api_key
     }
-
 
     post '/api/v1/road_trip', params: params
 
@@ -34,9 +33,7 @@ RSpec.describe 'road trip request' do
       'api_key': user.api_key
     }
 
-
     post '/api/v1/road_trip', params: params
-
 
     expect(response.status).to eq(400)
 
