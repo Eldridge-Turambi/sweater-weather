@@ -22,6 +22,11 @@ RSpec.describe 'road trip request' do
     expect(road_trip[:data]).to have_key(:id)
     expect(road_trip[:data]).to have_key(:type)
     expect(road_trip[:data]).to have_key(:attributes)
+    expect(road_trip[:data][:attributes]).to have_key(:start_city)
+    expect(road_trip[:data][:attributes]).to have_key(:end_city)
+    expect(road_trip[:data][:attributes]).to have_key(:travel_time)
+    expect(road_trip[:data][:attributes][:weather_at_eta]).to have_key(:temperature)
+    expect(road_trip[:data][:attributes][:weather_at_eta]).to have_key(:conditions)
   end
 
   it 'sad path for road trip request', :vcr do

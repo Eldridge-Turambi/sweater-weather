@@ -3,7 +3,7 @@ class Api::V1::UsersController < ApplicationController
   def create
     user = User.new(user_params)
     if params[:password] != params[:password_confirmation]
-      render json: { status: 400, message: "Passwords Do Not Match" }
+      render json: { status: 400, message: "Passwords Do Not Match" }, status: 400
     elsif User.find_by(email: user[:email]).present?
       render json: { status: 400, message: "Email already exists" }
     else
