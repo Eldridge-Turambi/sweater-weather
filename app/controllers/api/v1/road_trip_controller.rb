@@ -15,7 +15,7 @@ class Api::V1::RoadTripController < ApplicationController
         render json: {message: 'ooops Unable to find routes for these locations' }, status: 400
       end
     elsif user.present? == false
-      render json: {message: "Bad API key" }, status: 400
+      render json: {message: "Bad API key yo :/" }, status: 400
     end
   end
 end
