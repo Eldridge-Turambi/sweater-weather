@@ -3,8 +3,6 @@ require 'rails_helper'
 RSpec.describe 'Create User' do
 
   it 'creates user to database', :vcr do
-    # headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
-
     params = {
       "email": "whatever@example.com",
       "password": "password",
@@ -23,5 +21,23 @@ RSpec.describe 'Create User' do
     expect(user_json[:data]).to have_key(:attributes)
     expect(user_json[:data][:attributes]).to have_key(:email)
     expect(user_json[:data][:attributes]).to have_key(:api_key)
+  end
+
+  it 'sad path for creating user to database', :vcr do
+    params = {
+      "email": "whatever@example.com",
+      "password": "passwor",
+      "password_confirmation": "password"
+    }
+    post '/api/v1/users', params: params
+
+    expect(response.status).to eq(400)
+
+    error_json = JSON.parse(response.body, symbolize_names: true)
+    
+    expect(error_json).to be_a(Hash)
+    expect(error_json[:status]).to eq(400)
+    expect(error_json[:message]).to eq('Passwords Do Not Match')
+
   end
 end
